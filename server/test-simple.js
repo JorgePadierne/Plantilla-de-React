@@ -1,6 +1,6 @@
-const http = require('http');
+import http from 'http';
 
-function makeRequest(method, path, data = null) {
+async function makeRequest(method, path, data = null) {
   return new Promise((resolve, reject) => {
     const options = {
       hostname: 'localhost',
@@ -69,4 +69,4 @@ async function testValidation() {
   }
 }
 
-testValidation(); 
+testValidation();

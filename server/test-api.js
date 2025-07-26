@@ -1,7 +1,7 @@
-const http = require('http');
+import http from 'http';
 
 // Función para hacer peticiones HTTP
-function makeRequest(method, path, data = null) {
+async function makeRequest(method, path, data = null) {
   return new Promise((resolve, reject) => {
     const options = {
       hostname: 'localhost',
@@ -95,4 +95,4 @@ async function runTests() {
 }
 
 // Ejecutar las pruebas
-runTests(); 
+runTests();

@@ -1,4 +1,4 @@
-const http = require('http');
+import http from 'http';
 
 function makeRequest(method, path) {
   return new Promise((resolve, reject) => {
@@ -59,4 +59,4 @@ async function testSimple() {
   }
 }
 
-testSimple(); 
+testSimple();

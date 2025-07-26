@@ -1,4 +1,4 @@
-const { searchUsers } = require('./controllers/userController');
+import { searchUsers } from './controllers/userController.js';
 
 // Simular request y response
 const mockReq = {
@@ -31,4 +31,4 @@ async function testController() {
   }
 }
 
-testController(); 
+testController();

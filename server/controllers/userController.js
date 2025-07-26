@@ -1,4 +1,4 @@
-const { PrismaClient } = require('@prisma/client');
+import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 // Obtener todos los usuarios
@@ -190,11 +190,11 @@ const searchUsers = async (req, res) => {
   }
 };
 
-module.exports = {
+export {
   getAllUsers,
   getUserById,
   createUser,
   updateUser,
   deleteUser,
   searchUsers
-}; 
+};

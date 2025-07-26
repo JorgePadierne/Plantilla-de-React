@@ -1,8 +1,8 @@
-const express = require('express');
-const cors = require('cors');
-const { connectDB, disconnectDB } = require('./config/database');
-const userRoutes = require('./routes/userRoutes');
-const errorHandler = require('./middleware/errorHandler');
+import express from 'express';
+import cors from 'cors';
+import { connectDB, disconnectDB } from './config/database.js';
+import userRoutes from './routes/userRoutes.js';
+import errorHandler from './middleware/errorHandler.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -67,4 +67,4 @@ process.on('SIGTERM', async () => {
 });
 
 // Iniciar el servidor
-startServer(); 
+startServer();
